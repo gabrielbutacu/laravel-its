@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\UserController;
 
 
 
@@ -29,3 +30,10 @@ Route::get('posts', [PostController::class, 'index']);
 
 Route::get('create-post', [PostController::class, 'create']);
 Route::post('create-post', [PostController::class, 'savePost']);
+
+Route::get('edit-post/{id}', [PostController::class, 'edit']);
+Route::post('update-post/{id}', [PostController::class, 'updatePost']);
+
+Route::delete('delete-post/{id}', [PostController::class, 'delete']);
+
+Route::get('user/{id}', [UserController::class, 'userProfile']);
