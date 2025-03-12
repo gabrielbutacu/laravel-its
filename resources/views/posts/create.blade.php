@@ -1,3 +1,4 @@
+<x-app-layout>
 <h1>Nuovo post</h1>
 <form method="POST" action="{{url('create-post')}}">
     @csrf
@@ -21,3 +22,4 @@
 
     <button>Crea post</button>
 </form>
+</x-app-layout>

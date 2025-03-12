@@ -1,3 +1,4 @@
+<x-app-layout>
 <h1>Modifica post</h1>
 <form method="POST" action="{{url('update-post/'.$post->id)}}">
     @csrf
@@ -31,3 +32,4 @@
 
     <button>Aggiorna post</button>
 </form>
+</x-app-layout>
